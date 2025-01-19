@@ -1,0 +1,158 @@
+{
+  "config": {
+    "currency": "₽",
+    "defaultLang": "ru",
+    "menuTypes": [
+      "main"
+    ]
+  },
+  "navigation": [
+    {
+      "id": "main",
+      "title": "VIP МЕНЮ",
+      "icon": "fas fa-glass-martini-alt",
+      "sections": [
+        {
+          "id": "whiskey",
+          "title": "ИЗЫСКАННЫЙ ВИСКИ"
+        },
+        {
+          "id": "cognac",
+          "title": "ПРЕМИАЛЬНЫЙ КОНЬЯК"
+        },
+        {
+          "id": "rum",
+          "title": "ЭЛИТНЫЙ РОМ"
+        },
+        {
+          "id": "champagne",
+          "title": "ИГРИСТЫЕ ВИНА"
+        },
+        {
+          "id": "gin",
+          "title": "КАЧЕСТВЕННЫЙ ДЖИН"
+        }
+      ]
+    }
+  ],
+  "menu": {
+    "main": [
+      {
+        "id": "whiskey",
+        "type": "main",
+        "title": "ИЗЫСКАННЫЙ ВИСКИ",
+        "items": [
+          {
+            "id": "glenlivet-12",
+            "type": "spirits",
+            "subtype": "whiskey",
+            "name": "The Glenlivet 12 years",
+            "price": 20000,
+            "currency": "₽",
+            "ingredients": "Виски, 0.7 л"
+          },
+          {
+            "id": "aberfeldy-12",
+            "type": "spirits",
+            "subtype": "whiskey",
+            "name": "Aberfeldy 12 years",
+            "price": 17000,
+            "currency": "₽",
+            "ingredients": "Виски, 0.7 л"
+          }
+        ]
+      },
+      {
+        "id": "cognac",
+        "type": "main",
+        "title": "ПРЕМИАЛЬНЫЙ КОНЬЯК",
+        "items": [
+          {
+            "id": "martell-vs",
+            "type": "spirits",
+            "subtype": "cognac",
+            "name": "Martell VS",
+            "price": 17000,
+            "currency": "₽",
+            "ingredients": "Коньяк, 0.7 л"
+          }
+        ]
+      },
+      {
+        "id": "rum",
+        "type": "main",
+        "title": "ЭЛИТНЫЙ РОМ",
+        "items": [
+          {
+            "id": "highball-express-12",
+            "type": "spirits",
+            "subtype": "rum",
+            "name": "Highball Express Reserve Blend 12 Years Old",
+            "price": 15000,
+            "currency": "₽",
+            "ingredients": "Ром, 0.7 л"
+          },
+          {
+            "id": "red-bonny-dark",
+            "type": "spirits",
+            "subtype": "rum",
+            "name": "Red Bonny Dark",
+            "price": 10000,
+            "currency": "₽",
+            "ingredients": "Ром, 0.75 л"
+          }
+        ]
+      },
+      {
+        "id": "champagne",
+        "type": "main",
+        "title": "ИГРИСТЫЕ ВИНА",
+        "items": [
+          {
+            "id": "moet-chandon",
+            "type": "wine",
+            "subtype": "champagne",
+            "name": "Moet & Chandon Brut Imperial",
+            "price": 25000,
+            "currency": "₽",
+            "ingredients": "Шампанское, 0.75 л"
+          },
+          {
+            "id": "herxheim-riesling",
+            "type": "wine",
+            "subtype": "sparkling",
+            "name": "Herxheim am Berg Riesling Brut",
+            "price": 10000,
+            "currency": "₽",
+            "ingredients": "Игристое вино, 0.75 л"
+          }
+        ]
+      },
+      {
+        "id": "gin",
+        "type": "main",
+        "title": "КАЧЕСТВЕННЫЙ ДЖИН",
+        "items": [
+          {
+            "id": "jawbox-vip",
+            "type": "spirits",
+            "subtype": "gin",
+            "name": "Jawbox Small Batch",
+            "price": 9000,
+            "currency": "₽",
+            "ingredients": "Джин, 0.7 л"
+          },
+          {
+            "id": "bombay-sapphire-vip",
+            "type": "spirits",
+            "subtype": "gin",
+            "name": "Bombay Sapphire",
+            "price": 8400,
+            "currency": "₽",
+            "ingredients": "Джин, 0.7 л"
+          }
+        ]
+      }
+    ]
+  }
+}

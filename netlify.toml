@@ -1,0 +1,29 @@
+[build]
+  functions = "netlify/functions"
+  publish = "."
+
+[functions]
+  node_bundler = "esbuild"
+
+[build.environment]
+  GITHUB_TOKEN = "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"
+  GITHUB_OWNER = "kirniy"
+  GITHUB_REPO = "vnvnc-menu"
+  ADMIN_PASSWORD = "ast1287"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[build.processing]
+
+  [build.processing.css]
+
+  [build.processing.html]
+
+  [build.processing.images]
+
+  [build.processing.js]
+
+[build.services]

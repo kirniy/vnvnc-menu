@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>VNVNC MENU</title>
+    <link rel="preload" as="image" href="https://i.ibb.co/h7CpTF4/background-new.png">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <img src="https://i.ibb.co/hYm4Lhs/vnvnc-logo-807-491.png" alt="VNVNC Logo" class="logo">
+        
+        <!-- Menu Switch -->
+        <div class="menu-switch" data-menu="special">
+            <div class="menu-switch-slider"></div>
+            <div class="menu-option special-option">
+                <i class="fas fa-cocktail"></i>
+                АВТОРСКИЕ
+            </div>
+            <div class="menu-option main-option">
+                <i class="fas fa-glass-martini-alt"></i>
+                ОСНОВНОЕ
+            </div>
+            <div class="menu-option food-option">
+                <i class="fas fa-utensils"></i>
+                КУХНЯ
+            </div>
+            <div class="menu-option vip-option">
+                <i class="fas fa-crown"></i>
+                VIP
+            </div>
+        </div>
+
+        <!-- Special Menu (Signature Cocktails) -->
+        <div id="cocktail-menu" class="menu-page active">
+            <!-- Will be populated by menu-loader.js -->
+        </div>
+
+        <!-- Main Menu -->
+        <div id="main-menu" class="menu-container">
+            <!-- Will be populated by menu-loader.js -->
+        </div>
+
+        <!-- Food Menu -->
+        <div id="food-menu" class="menu-container">
+            <!-- Will be populated by food-menu-loader.js -->
+        </div>
+
+        <!-- VIP Menu -->
+        <div id="vip-menu" class="menu-container">
+            <!-- Will be populated by vip-menu-loader.js -->
+        </div>
+
+        <!-- Social Links -->
+        <div class="buttons-container">
+            <a href="https://t.me/vnvnc_spb" class="social-button" target="_blank">
+                <i class="fab fa-telegram-plane"></i> Канал
+            </a>
+            <a href="https://clck.ru/3CNJzL" class="social-button" target="_blank">
+                <i class="fas fa-comments"></i> Чат
+            </a>
+            <a href="https://t.me/vnvncbattlebot" class="social-button" target="_blank">
+                <i class="fas fa-robot"></i> Бот
+            </a>
+        </div>
+
+        <div class="disclaimer">
+            Не является публичной офертой, используется на правах рекламы
+        </div>
+
+        <!-- Back to Top Button -->
+        <button class="back-to-top" id="backToTop" title="Наверх">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </div>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(98757792, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/98757792" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <script src="https://kit.fontawesome.com/your-code.js"></script>
+    <script src="food-menu-loader.js"></script>
+    <script src="menu-loader.js"></script>
+    <script src="vip-menu-loader.js"></script>
+</body>
+</html> 

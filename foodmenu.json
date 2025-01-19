@@ -1,0 +1,521 @@
+{
+  "config": {
+    "currency": "₽",
+    "defaultLang": "ru"
+  },
+  "navigation": [
+    {
+      "id": "main",
+      "title": "ОСНОВНОЕ",
+      "icon": "fas fa-utensils",
+      "sections": [
+        {
+          "id": "special",
+          "title": "СПЕШЛ"
+        },
+        {
+          "id": "table-sets",
+          "title": "В СТОЛ"
+        },
+        {
+          "id": "starters",
+          "title": "ЗАКУСКИ"
+        },
+        {
+          "id": "salads",
+          "title": "САЛАТЫ"
+        },
+        {
+          "id": "soups",
+          "title": "СУПЫ"
+        },
+        {
+          "id": "streetfood",
+          "title": "СТРИТФУД"
+        },
+        {
+          "id": "main-dishes",
+          "title": "ГОРЯЧИЕ БЛЮДА"
+        },
+        {
+          "id": "pizza",
+          "title": "ПИЦЦА"
+        },
+        {
+          "id": "pasta",
+          "title": "ПАСТА"
+        },
+        {
+          "id": "wok",
+          "title": "WOK"
+        },
+        {
+          "id": "desserts",
+          "title": "ДЕСЕРТЫ"
+        }
+      ]
+    }
+  ],
+  "menu": {
+    "main": [
+      {
+        "id": "special",
+        "type": "main",
+        "title": "СПЕШЛ",
+        "items": [
+          {
+            "id": "meat-wave-set",
+            "type": "food",
+            "subtype": "set",
+            "name": "Meat Wave Set",
+            "price": 3000,
+            "currency": "₽",
+            "description": "Когда весь танцпол твой, но нужна подзарядка. Сытный гранд-сет на компанию, подающийся на деревянной подставке",
+            "ingredients": "Сочный шашлык из свинины (200 г), нежный шашлык из курицы (160 г), пикантные колбаски гриль из свинины с сыром (160 г), маринованный шашлык из куриных сердечек (160 г), хрустящий картофель фри, свежий салат Коул-Слоу, ароматная фокача с песто и розмарином, дуэт соусов (пикантная томатная сальса, классический френч), острый перец халапеньо, свежий микс зелени",
+            "portions": "2-3 персоны"
+          }
+        ]
+      },
+      {
+        "id": "table-sets",
+        "type": "main",
+        "title": "В СТОЛ",
+        "items": [
+          {
+            "id": "beer-set",
+            "type": "food",
+            "subtype": "set",
+            "name": "Пивной сет",
+            "price": 1300,
+            "currency": "₽",
+            "ingredients": "Куриные крылья, сырные палочки, гренки, луковые кольца, подается с тремя соусми",
+            "weight": "400 гр"
+          },
+          {
+            "id": "meat-platter",
+            "type": "food",
+            "subtype": "set",
+            "name": "Мясное плато",
+            "price": 1500,
+            "currency": "₽",
+            "ingredients": "Буженина, куриное филе, карбонад, пепперони, помидоры черри, зелень, горчица и хрен",
+            "weight": "120/180/60 гр"
+          },
+          {
+            "id": "cheese-platter",
+            "type": "food",
+            "subtype": "set",
+            "name": "Сырное плато",
+            "price": 1500,
+            "currency": "₽",
+            "ingredients": "Гауда, дорблю, чечил, армезан, эмменталь, виноград, мёд, крекеры, грецкие орехи, горчица",
+            "weight": "260/110 гр"
+          },
+          {
+            "id": "fruit-platter",
+            "type": "food",
+            "subtype": "set",
+            "name": "Фруктовое ассорти",
+            "price": 950,
+            "currency": "₽",
+            "ingredients": "Сладкая груша, апельсин, виноград, яблоко, банан",
+            "weight": "450 гр"
+          }
+        ]
+      },
+      {
+        "id": "starters",
+        "type": "main",
+        "title": "ЗАКУСКИ",
+        "items": [
+          {
+            "id": "bruschetta-tomato",
+            "type": "food",
+            "subtype": "starter",
+            "name": "Брускетты с томатами и моцареллой",
+            "price": 600,
+            "currency": "₽",
+            "ingredients": "3 шт",
+            "weight": "280 гр"
+          },
+          {
+            "id": "bruschetta-cheese",
+            "type": "food",
+            "subtype": "starter",
+            "name": "Брускетты четыре сыра",
+            "price": 650,
+            "currency": "₽",
+            "ingredients": "3 шт",
+            "weight": "280 гр"
+          },
+          {
+            "id": "bruschetta-chicken",
+            "type": "food",
+            "subtype": "starter",
+            "name": "Брускетты с сыровяленой куриной грудкой",
+            "price": 600,
+            "currency": "₽",
+            "ingredients": "3 шт",
+            "weight": "250 гр"
+          },
+          {
+            "id": "croutons",
+            "type": "food",
+            "subtype": "starter",
+            "name": "Чесночные ржаные гренки",
+            "price": 200,
+            "currency": "₽",
+            "ingredients": "С соусом Блю чиз",
+            "weight": "170/30 гр"
+          },
+          {
+            "id": "french-fries",
+            "type": "food",
+            "subtype": "starter",
+            "name": "Картофель фри",
+            "price": 200,
+            "currency": "₽",
+            "ingredients": "C кетчупом",
+            "weight": "150/30 гр"
+          },
+          {
+            "id": "nachos",
+            "type": "food",
+            "subtype": "starter",
+            "name": "Начос",
+            "price": 350,
+            "currency": "₽",
+            "ingredients": "С 3-мя соусами",
+            "weight": "150/90 гр"
+          },
+          {
+            "id": "fried-cheese",
+            "type": "food",
+            "subtype": "starter",
+            "name": "Жареный сыр",
+            "price": 550,
+            "currency": "₽",
+            "ingredients": "С брусничным соусом",
+            "weight": "150/30 гр"
+          },
+          {
+            "id": "chicken-wings",
+            "type": "food",
+            "subtype": "starter",
+            "name": "Крылья куриные",
+            "price": 500,
+            "currency": "₽",
+            "ingredients": "С томатной сальсой",
+            "weight": "250/50 гр"
+          },
+          {
+            "id": "adams-ribs",
+            "type": "food",
+            "subtype": "starter",
+            "name": "Ребра Адама",
+            "price": 800,
+            "currency": "₽",
+            "ingredients": "Ребра свиные, картофель, соус барбекю, чеснок, томатная паста, французская горчица, жидкий дым, аджика, горчичный соус",
+            "weight": "250/160/30 гр"
+          }
+        ]
+      },
+      {
+        "id": "salads",
+        "type": "main",
+        "title": "САЛАТЫ",
+        "items": [
+          {
+            "id": "greek-salad",
+            "type": "food",
+            "subtype": "salad",
+            "name": "Салат \"Греческий\"",
+            "price": 450,
+            "currency": "₽",
+            "ingredients": "Микс салата, огурец, томаты, болгарский перец, маслины, красный лук и греческая заправка, абхазский домашний сыр",
+            "weight": "260 гр"
+          },
+          {
+            "id": "caesar-salad",
+            "type": "food",
+            "subtype": "salad",
+            "name": "Салат \"Цезарь\"",
+            "price": 600,
+            "currency": "₽",
+            "ingredients": "Микс салата, куриное филе, томаты черри, пармезан, чесночные крутоны, соус из анчоусов",
+            "weight": "260 гр"
+          },
+          {
+            "id": "crispy-eggplant",
+            "type": "food",
+            "subtype": "salad",
+            "name": "Салат хрустящий баклажан с цыплёнком",
+            "price": 450,
+            "currency": "₽",
+            "ingredients": "",
+            "weight": "200 гр"
+          }
+        ]
+      },
+      {
+        "id": "soups",
+        "type": "main",
+        "title": "СУПЫ",
+        "items": [
+          {
+            "id": "chicken-noodle-soup",
+            "type": "food",
+            "subtype": "soup",
+            "name": "Куриный суп с лапшой",
+            "price": 350,
+            "currency": "₽",
+            "ingredients": "Куриный бульон с перепелиным яйцом, куриной грудкой и лапшой",
+            "weight": "300 гр"
+          }
+        ]
+      },
+      {
+        "id": "streetfood",
+        "type": "main",
+        "title": "СТРИТФУД",
+        "items": [
+          {
+            "id": "club-sandwich",
+            "type": "food",
+            "subtype": "streetfood",
+            "name": "Клаб Сэндвич",
+            "price": 500,
+            "currency": "₽",
+            "ingredients": "Обжаренный тостовый хлеб с куриным филе, сыром и свежими овощами, подаётся с картофелем фри и кетчупом",
+            "weight": "210/100/30 гр"
+          },
+          {
+            "id": "big-boos-burger",
+            "type": "food",
+            "subtype": "streetfood",
+            "name": "Big Boos бургер на двоих",
+            "price": 1000,
+            "currency": "₽",
+            "ingredients": "Бекон, говяжья котлета, салат, сыр, мармеладный лук, фирменный соус",
+            "weight": "550 гр"
+          },
+          {
+            "id": "chicken-strips",
+            "type": "food",
+            "subtype": "streetfood",
+            "name": "Стрипсы куриные",
+            "price": 400,
+            "currency": "₽",
+            "ingredients": "С кисло-сладким соусом",
+            "weight": "120/30 гр"
+          },
+          {
+            "id": "fish-and-chips",
+            "type": "food",
+            "subtype": "streetfood",
+            "name": "Фиш-энд-чипс",
+            "price": 650,
+            "currency": "₽",
+            "ingredients": "Хрустящее рыбное филе, жаренное во фритюре с картофелем фри с соусом тар-тар",
+            "weight": "120/100/30 гр"
+          }
+        ]
+      },
+      {
+        "id": "main-dishes",
+        "type": "main",
+        "title": "ГОРЯЧИЕ БЛЮДА",
+        "items": [
+          {
+            "id": "french-meat",
+            "type": "food",
+            "subtype": "main",
+            "name": "Мясо по-французски с помидорами",
+            "price": 700,
+            "currency": "₽",
+            "ingredients": "Картофель, мякоть свинины, сыр твёрдый, помидоры, лук, домашний майонез, оливковое масло, чеснок, соль, перец, пряности, зелень",
+            "weight": "300/100 гр"
+          }
+        ]
+      },
+      {
+        "id": "pizza",
+        "type": "main",
+        "title": "ПИЦЦА 30 СМ",
+        "items": [
+          {
+            "id": "pizza-margherita",
+            "type": "food",
+            "subtype": "pizza",
+            "name": "Пицца Маргарита",
+            "price": 600,
+            "currency": "₽",
+            "ingredients": "Томатный соус, моцарелла, гауда",
+            "weight": "350 гр"
+          },
+          {
+            "id": "pizza-carbonara",
+            "type": "food",
+            "subtype": "pizza",
+            "name": "Пицца Карбонара",
+            "price": 600,
+            "currency": "₽",
+            "ingredients": "Бекон, куриное яйцо, моцарелла, гауда, томатный соус",
+            "weight": "380 гр"
+          },
+          {
+            "id": "pizza-chicken-pesto",
+            "type": "food",
+            "subtype": "pizza",
+            "name": "Пицца Курица Песто",
+            "price": 700,
+            "currency": "₽",
+            "ingredients": "Моцарелла, гауда, куриное филе, помидоры черри, томатный соус, песто",
+            "weight": "380 гр"
+          },
+          {
+            "id": "pizza-peppeperoni",
+            "type": "food",
+            "subtype": "pizza",
+            "name": "Пицца Пепперони",
+            "price": 650,
+            "currency": "₽",
+            "ingredients": "Моцарелла, гауда, томатный соус, пепперони",
+            "weight": "380 гр"
+          },
+          {
+            "id": "pizza-meaty",
+            "type": "food",
+            "subtype": "pizza",
+            "name": "Пицца Сытная",
+            "price": 950,
+            "currency": "₽",
+            "ingredients": "Моцарелла, гауда, барбекю соус, буженина, куриное филе, бекон, пепперони, корнишоны, лук",
+            "weight": "440 гр"
+          },
+          {
+            "id": "pizza-pear-dor-blue",
+            "type": "food",
+            "subtype": "pizza",
+            "name": "Пицца Груша Дор Блю",
+            "price": 950,
+            "currency": "₽",
+            "ingredients": "Моцарелла, гауда, мон блю, сливки, мёд, миндаль",
+            "weight": "430 гр"
+          },
+          {
+            "id": "pizza-prosciutto-fungi",
+            "type": "food",
+            "subtype": "pizza",
+            "name": "Пицца Прошутто Фунги",
+            "price": 700,
+            "currency": "₽",
+            "ingredients": "Моцарелла, гауда, томатный соус, свинина, шампиньоны, орегано",
+            "weight": "390 гр"
+          },
+          {
+            "id": "pizza-thick-crust",
+            "type": "food",
+            "subtype": "pizza",
+            "name": "Пицца на пышном тесте",
+            "price": 150,
+            "currency": "₽",
+            "ingredients": "Дополнительная опция",
+            "weight": ""
+          }
+        ]
+      },
+      {
+        "id": "pasta",
+        "type": "main",
+        "title": "ПАСТА",
+        "items": [
+          {
+            "id": "pasta-carbonara",
+            "type": "food",
+            "subtype": "pasta",
+            "name": "Паста Карбонара",
+            "price": 550,
+            "currency": "₽",
+            "ingredients": "Бекон, куриное яйцо, моцарелла, сливочный соус",
+            "weight": "300 гр"
+          },
+          {
+            "id": "pasta-chicken-mushroom",
+            "type": "food",
+            "subtype": "pasta",
+            "name": "Паста с курицей и грибами",
+            "price": 550,
+            "currency": "₽",
+            "ingredients": "Куриное филе, шампиньоны, сливочный соус",
+            "weight": "300 гр"
+          },
+          {
+            "id": "pasta-pomodoro",
+            "type": "food",
+            "subtype": "pasta",
+            "name": "Паста Аль помодоро",
+            "price": 450,
+            "currency": "₽",
+            "ingredients": "",
+            "weight": "270 гр"
+          }
+        ]
+      },
+      {
+        "id": "wok",
+        "type": "main",
+        "title": "WOK",
+        "items": [
+          {
+            "id": "wok-chicken",
+            "type": "food",
+            "subtype": "wok",
+            "name": "Wok с курицей",
+            "price": 450,
+            "currency": "₽",
+            "ingredients": "",
+            "weight": "300 гр"
+          },
+          {
+            "id": "wok-pork",
+            "type": "food",
+            "subtype": "wok",
+            "name": "Wok со свининой",
+            "price": 500,
+            "currency": "₽",
+            "ingredients": "",
+            "weight": "300 гр"
+          },
+          {
+            "id": "wok-vegetables",
+            "type": "food",
+            "subtype": "wok",
+            "name": "Wok с овощами",
+            "price": 450,
+            "currency": "₽",
+            "ingredients": "",
+            "weight": "260 гр"
+          }
+        ]
+      },
+      {
+        "id": "desserts",
+        "type": "main",
+        "title": "ДЕСЕРТЫ",
+        "items": [
+          {
+            "id": "desserts-assorted",
+            "type": "food",
+            "subtype": "dessert",
+            "name": "Десерты в ассортименте",
+            "price": 350,
+            "currency": "₽",
+            "ingredients": "Спрашивайте у официанта",
+            "weight": ""
+          }
+        ]
+      }
+    ]
+  }
+}
