@@ -1,0 +1,8 @@
+{
+  "name": "vnvnc-menu-2025",
+  "version": "1.0.0",
+  "description": "ANGAR Menu Admin Interface",
+  "dependencies": {
+    "@octokit/rest": "^20.0.2"
+  }
+} 

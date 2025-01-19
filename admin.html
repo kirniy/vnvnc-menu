@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ANGAR Menu Admin</title>
+    <title>VNVNC Menu Admin</title>
     <style>
         :root {
             --bg-color: #0a0a0a;
             --text-color: #e0e0e0;
-            --accent-color: #ff4500;
-            --accent-color-hover: #ff6a33;
+            --accent-color: #7ba3f1;
+            --accent-color-hover: #5b83d1;
+            --secondary-color: #bc8fe9;
+            --tertiary-color: #ff4500;
         }
 
         body {
@@ -19,6 +21,11 @@
             margin: 0;
             padding: 20px;
             line-height: 1.6;
+            background-image: url('https://i.ibb.co/h7CpTF4/background-new.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
 
         .container {
@@ -27,13 +34,21 @@
             padding: 20px;
             background: rgba(30,30,30,0.8);
             border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            box-shadow: 0 4px 15px rgba(123,163,241,0.3);
+            backdrop-filter: blur(10px);
         }
 
         h1 {
-            color: var(--accent-color);
+            color: #ffffff;
             text-align: center;
             margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 
+                1px 1px #7ba3f1,
+                -1px -1px #bc8fe9,
+                -1px 1px #7ba3f1,
+                1px -1px #bc8fe9;
         }
 
         .admin-section {
@@ -41,6 +56,39 @@
             padding: 20px;
             background: rgba(0,0,0,0.2);
             border-radius: 10px;
+        }
+
+        .menu-selector {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            background: rgba(0,0,0,0.3);
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .menu-type-btn {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: rgba(123,163,241,0.2);
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        .menu-type-btn.active {
+            background: var(--accent-color);
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(123,163,241,0.4);
+        }
+
+        .menu-type-btn:hover {
+            background: var(--accent-color-hover);
         }
 
         .button {
@@ -58,6 +106,14 @@
 
         .button:hover {
             background-color: var(--accent-color-hover);
+        }
+
+        .button.warning {
+            background-color: var(--tertiary-color);
+        }
+
+        .button.warning:hover {
+            background-color: #ff6a33;
         }
 
         #jsonEditor {
@@ -109,11 +165,21 @@
         .hidden {
             display: none;
         }
+
+        .current-menu-label {
+            text-align: center;
+            color: var(--accent-color);
+            font-size: 1.2em;
+            margin: 10px 0;
+            padding: 5px;
+            background: rgba(0,0,0,0.2);
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>ANGAR Menu Admin</h1>
+        <h1>VNVNC Menu Admin</h1>
         
         <div class="password-section">
             <input type="password" id="adminPassword" class="password-input" placeholder="Enter admin password">
@@ -121,14 +187,22 @@
         </div>
 
         <div id="adminContent" class="hidden">
+            <div class="menu-selector">
+                <button class="menu-type-btn active" data-menu="menu" onclick="switchMenu('menu')">Main Menu</button>
+                <button class="menu-type-btn" data-menu="foodmenu" onclick="switchMenu('foodmenu')">Food Menu</button>
+                <button class="menu-type-btn" data-menu="vipmenu" onclick="switchMenu('vipmenu')">VIP Menu</button>
+            </div>
+
+            <div class="current-menu-label" id="currentMenuLabel">Editing: Main Menu</div>
+
             <div class="admin-section">
                 <button class="button" onclick="loadCurrentMenu()">Load Current Menu</button>
                 <input type="file" id="jsonFileInput" accept=".json" style="display: none">
                 <button class="button" onclick="document.getElementById('jsonFileInput').click()">Upload JSON File</button>
-                <button class="button" onclick="downloadMenu()">Download Menu JSON</button>
+                <button class="button" onclick="downloadMenu()">Download Current Menu</button>
                 <button class="button" onclick="formatJson()">Format JSON</button>
                 <textarea id="jsonEditor" spellcheck="false"></textarea>
-                <button class="button" onclick="validateAndUpdate()">Update Menu</button>
+                <button class="button warning" onclick="validateAndUpdate()">Update Menu</button>
             </div>
             
             <div id="statusMessage" class="status"></div>
@@ -137,7 +211,8 @@
 
     <script>
         let currentMenu = null;
-        let verifiedPassword = null;  // Store the password after verification
+        let verifiedPassword = null;
+        let currentMenuType = 'menu'; // Default to main menu
 
         async function verifyPassword() {
             const password = document.getElementById('adminPassword').value;
@@ -151,7 +226,7 @@
                 });
                 
                 if (response.ok) {
-                    verifiedPassword = password;  // Store the verified password
+                    verifiedPassword = password;
                     document.querySelector('.password-section').style.display = 'none';
                     document.getElementById('adminContent').classList.remove('hidden');
                     loadCurrentMenu();
@@ -163,21 +238,23 @@
             }
         }
 
-        // Add event listener for Enter key on password input
-        document.getElementById('adminPassword').addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                verifyPassword();
-            }
-        });
+        function switchMenu(menuType) {
+            currentMenuType = menuType;
+            document.querySelectorAll('.menu-type-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.menu === menuType);
+            });
+            document.getElementById('currentMenuLabel').textContent = `Editing: ${menuType === 'menu' ? 'Main Menu' : menuType === 'foodmenu' ? 'Food Menu' : 'VIP Menu'}`;
+            loadCurrentMenu();
+        }
 
         async function loadCurrentMenu() {
             try {
-                const response = await fetch('menu.json');
+                const response = await fetch(`${currentMenuType}.json`);
                 if (!response.ok) throw new Error('Failed to load menu');
                 
                 currentMenu = await response.json();
                 document.getElementById('jsonEditor').value = JSON.stringify(currentMenu, null, 2);
-                showStatus('Menu loaded successfully', true);
+                showStatus(`${currentMenuType} loaded successfully`, true);
             } catch (error) {
                 showStatus('Error loading menu: ' + error.message, false);
             }
@@ -189,7 +266,7 @@
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = 'menu.json';
+            a.download = `${currentMenuType}.json`;
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
@@ -207,20 +284,41 @@
             }
         }
 
+        function validateMenuStructure(menu, type) {
+            if (!menu.config || !menu.menu) {
+                throw new Error('Invalid menu structure: missing config or menu section');
+            }
+
+            if (type === 'menu' && (!menu.menu.signature || !menu.menu.main)) {
+                throw new Error('Invalid main menu structure: missing signature or main sections');
+            }
+
+            if (type === 'foodmenu' && !menu.menu.main) {
+                throw new Error('Invalid food menu structure: missing main section');
+            }
+
+            if (type === 'vipmenu' && !menu.menu.main) {
+                throw new Error('Invalid VIP menu structure: missing main section');
+            }
+
+            return true;
+        }
+
         async function validateAndUpdate() {
             try {
                 const jsonEditor = document.getElementById('jsonEditor');
                 const newMenu = JSON.parse(jsonEditor.value);
                 
-                // Basic validation
-                if (!newMenu.menu || !newMenu.menu.signature || !newMenu.menu.main) {
-                    throw new Error('Invalid menu structure');
-                }
+                // Validate menu structure
+                validateMenuStructure(newMenu, currentMenuType);
 
                 // Call the Netlify function to update the menu
                 const response = await fetch('/.netlify/functions/update-menu', {
                     method: 'POST',
-                    body: JSON.stringify(newMenu),
+                    body: JSON.stringify({
+                        menuType: currentMenuType,
+                        content: newMenu
+                    }),
                     headers: {
                         'Content-Type': 'application/json',
                         'Authorization': `Bearer ${verifiedPassword}`
@@ -232,7 +330,7 @@
                     throw new Error(error.error || 'Failed to update menu');
                 }
 
-                showStatus('Menu updated successfully! The changes will be live in a few minutes.', true);
+                showStatus(`${currentMenuType} updated successfully! The changes will be live in a few minutes.`, true);
             } catch (error) {
                 showStatus('Error: ' + error.message, false);
             }
@@ -262,6 +360,13 @@
                     }
                 };
                 reader.readAsText(file);
+            }
+        });
+
+        // Add event listener for Enter key on password input
+        document.getElementById('adminPassword').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                verifyPassword();
             }
         });
     </script>
