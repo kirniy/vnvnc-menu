@@ -6,10 +6,8 @@
   node_bundler = "esbuild"
 
 [build.environment]
-  GITHUB_TOKEN = "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"
   GITHUB_OWNER = "kirniy"
   GITHUB_REPO = "vnvnc-menu"
-  ADMIN_PASSWORD = "ast1287"
 
 [[redirects]]
   from = "/*"
