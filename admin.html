@@ -285,53 +285,79 @@
         }
 
         function validateMenuStructure(menu, type) {
-            if (!menu.config || !menu.menu) {
-                throw new Error('Invalid menu structure: missing config or menu section');
+            console.log('Validating menu:', type, menu);
+            
+            if (!menu.config) {
+                console.error('Missing config section');
+                throw new Error('Invalid menu structure: missing config section');
+            }
+            
+            if (!menu.menu) {
+                console.error('Missing menu section');
+                throw new Error('Invalid menu structure: missing menu section');
             }
 
-            if (type === 'menu' && (!menu.menu.signature || !menu.menu.main)) {
-                throw new Error('Invalid main menu structure: missing signature or main sections');
+            if (type === 'menu') {
+                if (!menu.menu.signature) {
+                    console.error('Missing signature section in main menu');
+                    throw new Error('Invalid main menu structure: missing signature section');
+                }
+                if (!menu.menu.main) {
+                    console.error('Missing main section in main menu');
+                    throw new Error('Invalid main menu structure: missing main section');
+                }
             }
 
             if (type === 'foodmenu' && !menu.menu.main) {
+                console.error('Missing main section in food menu');
                 throw new Error('Invalid food menu structure: missing main section');
             }
 
             if (type === 'vipmenu' && !menu.menu.main) {
+                console.error('Missing main section in VIP menu');
                 throw new Error('Invalid VIP menu structure: missing main section');
             }
 
+            console.log('Menu validation passed');
             return true;
         }
 
         async function validateAndUpdate() {
             try {
                 const jsonEditor = document.getElementById('jsonEditor');
-                const newMenu = JSON.parse(jsonEditor.value);
+                const jsonContent = jsonEditor.value;
+                console.log('Attempting to parse JSON:', jsonContent.substring(0, 200) + '...');
+                
+                const newMenu = JSON.parse(jsonContent);
+                console.log('JSON parsed successfully');
                 
                 // Validate menu structure
                 validateMenuStructure(newMenu, currentMenuType);
 
                 // Call the Netlify function to update the menu
+                console.log('Sending update request for menu type:', currentMenuType);
                 const response = await fetch('/.netlify/functions/update-menu', {
                     method: 'POST',
-                    body: JSON.stringify({
-                        menuType: currentMenuType,
-                        content: newMenu
-                    }),
                     headers: {
                         'Content-Type': 'application/json',
                         'Authorization': `Bearer ${verifiedPassword}`
-                    }
+                    },
+                    body: JSON.stringify({
+                        menuType: currentMenuType,
+                        content: newMenu
+                    })
                 });
 
                 if (!response.ok) {
-                    const error = await response.json();
-                    throw new Error(error.error || 'Failed to update menu');
+                    const errorData = await response.json();
+                    console.error('Server response error:', errorData);
+                    throw new Error(errorData.error || 'Failed to update menu');
                 }
 
-                showStatus(`${currentMenuType} updated successfully! The changes will be live in a few minutes.`, true);
+                const result = await response.json();
+                showStatus(result.message, true);
             } catch (error) {
+                console.error('Validation/Update error:', error);
                 showStatus('Error: ' + error.message, false);
             }
         }
