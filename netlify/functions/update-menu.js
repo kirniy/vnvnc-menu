@@ -24,8 +24,18 @@ exports.handler = async function(event, context) {
         const menuData = JSON.parse(event.body);
 
         // Basic validation
-        if (!menuData.menu || !menuData.menu.signature || !menuData.menu.main) {
-            throw new Error('Invalid menu structure');
+        if (!menuData.config || !menuData.navigation || !menuData.menu) {
+            throw new Error('Invalid menu structure: missing required top-level sections');
+        }
+
+        // Get menu type from the path parameter
+        const menuType = event.path.split('/').pop().replace('update-', '');
+
+        // Validate based on menu type
+        if (menuType === 'menu' && (!menuData.menu.signature || !menuData.menu.main)) {
+            throw new Error('Invalid drinks menu structure: missing signature or main section');
+        } else if ((menuType === 'foodmenu' || menuType === 'vipmenu') && !menuData.menu.main) {
+            throw new Error(`Invalid ${menuType} structure: missing main section`);
         }
 
         // Initialize GitHub client
@@ -37,18 +47,18 @@ exports.handler = async function(event, context) {
         const { data: currentFile } = await octokit.repos.getContent({
             owner: process.env.GITHUB_OWNER,
             repo: process.env.GITHUB_REPO,
-            path: 'menu.json'
+            path: `${menuType}.json`
         });
 
         // Update the file in GitHub
         await octokit.repos.createOrUpdateFileContents({
             owner: process.env.GITHUB_OWNER,
             repo: process.env.GITHUB_REPO,
-            path: 'menu.json',
+            path: `${menuType}.json`,
             message: 'Update menu via admin interface',
             content: Buffer.from(JSON.stringify(menuData, null, 2)).toString('base64'),
             sha: currentFile.sha,
-            branch: 'main' // or your default branch
+            branch: 'main'
         });
 
         return {
