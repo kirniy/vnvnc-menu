@@ -21,15 +21,16 @@ exports.handler = async function(event, context) {
 
     try {
         // Parse the incoming menu data
-        const menuData = JSON.parse(event.body);
+        const { menuType, content: menuData } = JSON.parse(event.body);
+
+        if (!menuType || !menuData) {
+            throw new Error('Menu type and content are required');
+        }
 
         // Basic validation
         if (!menuData.config || !menuData.navigation || !menuData.menu) {
             throw new Error('Invalid menu structure: missing required top-level sections');
         }
-
-        // Get menu type from the path parameter
-        const menuType = event.path.split('/').pop().replace('update-', '');
 
         // Validate based on menu type
         if (menuType === 'menu' && (!menuData.menu.signature || !menuData.menu.main)) {
