@@ -51,6 +51,7 @@
             "type": "cocktail",
             "name": "Peach Spritz",
             "price": 1500,
+            "currency": "₽",
             "ingredients": "Персиковый ликёр Niva Distillery, кордиал груша-жасмин-виноград Clavis, игристое вино Aristov, содовая, груша."
           },
           {
@@ -58,6 +59,7 @@
             "type": "cocktail",
             "name": "Hypsophila",
             "price": 1500,
+            "currency": "₽",
             "ingredients": "Джин Bombay Sapphire на анчане, кордиал васильки-черёмуха-голубика Clavis, Martini Bianco, кислый ликер, лайм кафир."
           },
           {
@@ -65,6 +67,7 @@
             "type": "cocktail",
             "name": "Sapphire Kar",
             "price": 1500,
+            "currency": "₽",
             "ingredients": "Джин Bombay Sapphire на анчане, кордиал кастелла кейк-клубника-бобы тонка Clavis, яичный белок."
           },
           {
@@ -72,6 +75,7 @@
             "type": "cocktail",
             "name": "Japan Pie",
             "price": 1500,
+            "currency": "₽",
             "ingredients": "Персиковый ликёр Niva Distillery, кокосовый ликёр Niva Distillery, кордиал манго-маракуйя-кокос Clavis, сок лимона, яичный белок."
           },
           {
@@ -79,6 +83,7 @@
             "type": "cocktail",
             "name": "Deep Passion",
             "price": 1500,
+            "currency": "₽",
             "ingredients": "Маракуйя, Jim Beam Apple, персиковый ликёр Niva Distillery, яблочный сок, кордиал саган дайля-зелёное яблоко-ваниль Clavis, содовая, зелёное яблоко."
           },
           {
@@ -86,6 +91,7 @@
             "type": "cocktail",
             "name": "Guilty Pleasure",
             "price": 1500,
+            "currency": "₽",
             "ingredients": "Tequila Pablo Blanco, кордиал вишня-шисо, Martini Fiero, корица."
           },
           {
@@ -93,6 +99,7 @@
             "type": "cocktail",
             "name": "Cherry Blossom",
             "price": 1500,
+            "currency": "₽",
             "ingredients": "Ром Bacardi Oakheart, ликёр из цветов бузины Niva Distillery, кордиал, яблочный сок, табаско, соль, попкорн."
           },
           {
@@ -100,6 +107,7 @@
             "type": "cocktail",
             "name": "Bite Me",
             "price": 1500,
+            "currency": "₽",
             "ingredients": "Джин Bombay Sapphire на анчане, кордиал лаванда-зизифора-кактус Clavis, персиковый ликёр Niva Distillery, игристое вино Aristov, содовая, нити чили."
           },
           {
@@ -107,6 +115,7 @@
             "type": "cocktail",
             "name": "Flower Wine",
             "price": 1500,
+            "currency": "₽",
             "ingredients": "Джин Bombay Sapphire на анчане, кордиал лаванда-зизифора-кактус Clavis, персиковый ликёр Niva Distillery, игристое вино Aristov, содовая, шиммер, пиробумага."
           }
         ]
