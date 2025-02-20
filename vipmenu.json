@@ -13,6 +13,10 @@
       "icon": "fas fa-glass-martini-alt",
       "sections": [
         {
+          "id": "cocktails",
+          "title": "ПРЕМИУМ КОКТЕЙЛИ"
+        },
+        {
           "id": "whiskey",
           "title": "ИЗЫСКАННЫЙ ВИСКИ"
         },
@@ -37,6 +41,76 @@
   ],
   "menu": {
     "main": [
+      {
+        "id": "cocktails",
+        "type": "main",
+        "title": "ПРЕМИУМ КОКТЕЙЛИ",
+        "items": [
+          {
+            "id": "peach-spritz",
+            "type": "cocktail",
+            "name": "Peach Spritz",
+            "price": 1500,
+            "ingredients": "Персиковый ликёр Niva Distillery, кордиал груша-жасмин-виноград Clavis, игристое вино Aristov, содовая, груша."
+          },
+          {
+            "id": "hypsophila",
+            "type": "cocktail",
+            "name": "Hypsophila",
+            "price": 1500,
+            "ingredients": "Джин Bombay Sapphire на анчане, кордиал васильки-черёмуха-голубика Clavis, Martini Bianco, кислый ликер, лайм кафир."
+          },
+          {
+            "id": "sapphire-kar",
+            "type": "cocktail",
+            "name": "Sapphire Kar",
+            "price": 1500,
+            "ingredients": "Джин Bombay Sapphire на анчане, кордиал кастелла кейк-клубника-бобы тонка Clavis, яичный белок."
+          },
+          {
+            "id": "japan-pie",
+            "type": "cocktail",
+            "name": "Japan Pie",
+            "price": 1500,
+            "ingredients": "Персиковый ликёр Niva Distillery, кокосовый ликёр Niva Distillery, кордиал манго-маракуйя-кокос Clavis, сок лимона, яичный белок."
+          },
+          {
+            "id": "deep-passion",
+            "type": "cocktail",
+            "name": "Deep Passion",
+            "price": 1500,
+            "ingredients": "Маракуйя, Jim Beam Apple, персиковый ликёр Niva Distillery, яблочный сок, кордиал саган дайля-зелёное яблоко-ваниль Clavis, содовая, зелёное яблоко."
+          },
+          {
+            "id": "guilty-pleasure",
+            "type": "cocktail",
+            "name": "Guilty Pleasure",
+            "price": 1500,
+            "ingredients": "Tequila Pablo Blanco, кордиал вишня-шисо, Martini Fiero, корица."
+          },
+          {
+            "id": "cherry-blossom",
+            "type": "cocktail",
+            "name": "Cherry Blossom",
+            "price": 1500,
+            "ingredients": "Ром Bacardi Oakheart, ликёр из цветов бузины Niva Distillery, кордиал, яблочный сок, табаско, соль, попкорн."
+          },
+          {
+            "id": "bite-me",
+            "type": "cocktail",
+            "name": "Bite Me",
+            "price": 1500,
+            "ingredients": "Джин Bombay Sapphire на анчане, кордиал лаванда-зизифора-кактус Clavis, персиковый ликёр Niva Distillery, игристое вино Aristov, содовая, нити чили."
+          },
+          {
+            "id": "flower-wine",
+            "type": "cocktail",
+            "name": "Flower Wine",
+            "price": 1500,
+            "ingredients": "Джин Bombay Sapphire на анчане, кордиал лаванда-зизифора-кактус Clavis, персиковый ликёр Niva Distillery, игристое вино Aristov, содовая, шиммер, пиробумага."
+          }
+        ]
+      },
       {
         "id": "whiskey",
         "type": "main",
