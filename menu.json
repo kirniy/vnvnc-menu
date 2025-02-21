@@ -31,8 +31,16 @@
           "title": "МИКСЫ"
         },
         {
+          "id": "red-bull-cocktails",
+          "title": "RED BULL КОКТЕЙЛИ"
+        },
+        {
           "id": "spirits",
           "title": "КРЕПКОЕ"
+        },
+        {
+          "id": "wine",
+          "title": "ВИНО"
         },
         {
           "id": "beer",
@@ -59,7 +67,7 @@
           "id": "born-irish-highball",
           "type": "signature",
           "name": "Born Irish Highball",
-          "price": 1200,
+          "price": 1400,
           "currency": "₽",
           "description": "Ирландский виски в элегантном сочетании с персиковыми нотами и яблочной свежестью",
           "ingredients": "Виски Born Irish, ликер персиковый Niva Distillery, лимонный фреш, яблочный сок, содовая, лимон",
@@ -69,7 +77,7 @@
           "id": "wow",
           "type": "signature",
           "name": "WOW",
-          "price": 900,
+          "price": 1000,
           "currency": "₽",
           "description": "Яркий микс текилы с азиатскими нотками юдзу и лемонграсса",
           "ingredients": "Текила El Charro, ликер персиковый Niva Distillery, лимонный фреш, кордиал Clavis юдзу/бамбук/лемонграсс, Seven Up, лайм",
@@ -79,7 +87,7 @@
           "id": "chinases",
           "type": "signature",
           "name": "Chinases",
-          "price": 750,
+          "price": 800,
           "currency": "₽",
           "description": "Утонченный коктейль с нотами дыни и пандана",
           "ingredients": "Джин Royal Raven Dry, ликер дынный Niva Distillery, яичный белок, кордиал Clavis банан/пандан/вермут, лимонный фреш",
@@ -89,7 +97,7 @@
           "id": "drunk-berry",
           "type": "signature",
           "name": "Drunk Berry",
-          "price": 700,
+          "price": 800,
           "currency": "₽",
           "description": "Игристый ягодный коктейль с нотами малины и вишни",
           "ingredients": "Водка Хаски, ликер малиновый Niva Distillery, ликер трипл сек Niva Distillery, сироп вишневый, лимонный фреш, игристое вино, апельсин",
@@ -99,17 +107,27 @@
           "id": "pimp",
           "type": "signature",
           "name": "PIMP",
-          "price": 650,
+          "price": 750,
           "currency": "₽",
           "description": "Тропический коктейль с нотами карамельного попкорна",
           "ingredients": "Ликер трипл сек Niva Distillery, ром Diablo Negro Caribbean, сливки, сироп попкорн, ананасовый сок, апельсин",
           "volume": "300 мл"
         },
         {
+          "id": "game-of-thrones",
+          "type": "signature",
+          "name": "Game of Thrones",
+          "price": 750,
+          "currency": "₽",
+          "description": "Тропический коктейль с ромом и маракуйей",
+          "ingredients": "Ром Diablo Negro Caribbean, ликер персиковый Niva Distillery, пюре маракуйя, лимонный фреш, ананасовый сок, апельсин",
+          "volume": "350 мл"
+        },
+        {
           "id": "poppy",
           "type": "signature",
           "name": "Poppy",
-          "price": 650,
+          "price": 700,
           "currency": "₽",
           "description": "Пряный коктейль с нотами черешни и кориандра",
           "ingredients": "Сибиттер травяной, ликер малиновый Niva Distillery, лимонный фреш, кордиал Clavis черешня/кинза/конопля",
@@ -119,7 +137,7 @@
           "id": "blue-line",
           "type": "signature",
           "name": "Blue Line",
-          "price": 600,
+          "price": 700,
           "currency": "₽",
           "description": "Освежающий коктейль с тропическими нотами",
           "ingredients": "Джин Royal Raven Dry, ликер блю кюрасао Niva Distillery, сироп кокосовый, лимонный фреш, ананасовый сок, апельсин",
@@ -129,7 +147,7 @@
           "id": "fwb",
           "type": "signature",
           "name": "FWB",
-          "price": 600,
+          "price": 700,
           "currency": "₽",
           "description": "Карибский ром в сочетании с вермутом и миндальными нотками",
           "ingredients": "Ром Diablo Negro Caribbean, Martini Fiero, сироп миндальный, лимонный фреш, ананасовый сок, апельсин",
@@ -139,27 +157,17 @@
           "id": "dope",
           "type": "signature",
           "name": "Dope",
-          "price": 600,
+          "price": 650,
           "currency": "₽",
           "description": "Необычный микс джина с личи и бабл-гам",
           "ingredients": "Джин Royal Raven Dry, ликер личи Niva Distillery, яблочный сок, сироп бабл-гам, лимонный фреш, лайм",
           "volume": "300 мл"
         },
         {
-          "id": "game-of-thrones",
-          "type": "signature",
-          "name": "Game of Thrones",
-          "price": 600,
-          "currency": "₽",
-          "description": "Тропический коктейль с ромом и маракуйей",
-          "ingredients": "Ром Diablo Negro Caribbean, ликер персиковый Niva Distillery, пюре маракуйя, лимонный фреш, ананасовый сок, апельсин",
-          "volume": "350 мл"
-        },
-        {
           "id": "this-is-second",
           "type": "signature",
           "name": "This is Second",
-          "price": 600,
+          "price": 650,
           "currency": "₽",
           "description": "Освежающий коктейль с малиново-вишневыми нотами",
           "ingredients": "Водка Хаски, ликер малиновый Niva Distillery, сироп вишневый, лимонный фреш, тоник, лимон",
@@ -177,7 +185,7 @@
             "id": "born-irish-sour",
             "type": "main",
             "name": "Born Irish Sour",
-            "price": 1100,
+            "price": 1250,
             "currency": "₽",
             "ingredients": "Виски Born Irish, лимонный фреш, сироп, яичный белок, лимон",
             "volume": "300 мл"
@@ -186,7 +194,7 @@
             "id": "aperol-spritz",
             "type": "main",
             "name": "Aperol Spritz",
-            "price": 900,
+            "price": 1000,
             "currency": "₽",
             "ingredients": "Апероль, игристое вино, содовая, апельсин",
             "volume": "300 мл"
@@ -195,16 +203,25 @@
             "id": "long-island-ice-tea",
             "type": "main",
             "name": "Long Island Ice Tea",
-            "price": 750,
+            "price": 900,
             "currency": "₽",
             "ingredients": "Водка Хаски, джин Royal Raven Dry, ром Diablo Negro Caribbean, текила El Charro, ликер трипл сек Niva Distillery, лимонный фреш, сахарный сироп, кола, лимон",
             "volume": "350 мл"
           },
           {
+            "id": "tequila-sunrise",
+            "type": "main",
+            "name": "Tequila Sunrise",
+            "price": 800,
+            "currency": "₽",
+            "ingredients": "Текила El Charro, апельсин, апельсиновый сок, сироп гренадин",
+            "volume": "300 мл"
+          },
+          {
             "id": "mai-tai",
             "type": "main",
             "name": "Mai Tai",
-            "price": 700,
+            "price": 750,
             "currency": "₽",
             "ingredients": "Ром Diablo Negro Caribbean, черный ром, ликер трипл сек Niva Distillery, лимонный фреш, сироп миндальный, ананасовый сок, лайм",
             "volume": "300 мл"
@@ -213,25 +230,16 @@
             "id": "pina-colada",
             "type": "main",
             "name": "Pina Colada",
-            "price": 700,
+            "price": 750,
             "currency": "₽",
             "ingredients": "Ром Diablo Negro Caribbean, ликер кокосовый Niva Distillery, сироп кокосовый, ананасовый сок, сливки, апельсин",
-            "volume": "300 мл"
-          },
-          {
-            "id": "tequila-sunrise",
-            "type": "main",
-            "name": "Tequila Sunrise",
-            "price": 700,
-            "currency": "₽",
-            "ingredients": "Текила El Charro, апельсин, апельсиновый сок, сироп гренадин",
             "volume": "300 мл"
           },
           {
             "id": "negroni",
             "type": "main",
             "name": "Negroni",
-            "price": 650,
+            "price": 700,
             "currency": "₽",
             "ingredients": "Джин Royal Raven Dry, Martini Rosso, биттер Niva Distillery, апельсин",
             "volume": "120 мл"
@@ -240,7 +248,7 @@
             "id": "blue-lagoon",
             "type": "main",
             "name": "Blue Lagoon",
-            "price": 600,
+            "price": 650,
             "currency": "₽",
             "ingredients": "Водка Хаски, ликер блю кюрасао Niva Distillery, лимонный фреш, Seven Up, лимон",
             "volume": "300 мл"
@@ -249,7 +257,7 @@
             "id": "white-russian",
             "type": "main",
             "name": "White Russian",
-            "price": 600,
+            "price": 650,
             "currency": "₽",
             "ingredients": "Водка Хаски, ликер кофейный Niva Distillery, сливки",
             "volume": "120 мл"
@@ -258,7 +266,7 @@
             "id": "sex-on-the-beach",
             "type": "main",
             "name": "Sex on the Beach",
-            "price": 600,
+            "price": 650,
             "currency": "₽",
             "ingredients": "Водка Хаски, ликер персиковый Niva Distillery, ананасовый сок, вишневый сок, лимонный фреш, апельсин",
             "volume": "300 мл"
@@ -267,7 +275,7 @@
             "id": "pornstar-martini",
             "type": "main",
             "name": "Pornstar Martini",
-            "price": 600,
+            "price": 650,
             "currency": "₽",
             "ingredients": "Водка Хаски, пюре маракуйя, лимонный фреш, сироп ванильный, игристое вино",
             "volume": "150 мл"
@@ -276,7 +284,7 @@
             "id": "bloody-mary",
             "type": "main",
             "name": "Bloody Mary",
-            "price": 600,
+            "price": 650,
             "currency": "₽",
             "ingredients": "Водка Хаски, лимонный фреш, томатный сок, соус ворчестер, табаско, соль, перец, лимон",
             "volume": "300 мл"
@@ -292,7 +300,7 @@
             "id": "tequila-boom",
             "type": "main",
             "name": "Tequila Boom",
-            "price": 600,
+            "price": 700,
             "currency": "₽",
             "ingredients": "Текила El Charro, Seven Up",
             "volume": "140 мл"
@@ -344,7 +352,7 @@
             "id": "bubble-shots",
             "type": "main",
             "name": "Bubble Shots",
-            "price": 1200,
+            "price": 1300,
             "currency": "₽",
             "ingredients": "Текила El Charro, ликер личи Niva Distillery, сироп бабл гам, лимонный фреш",
             "volume": "160 мл"
@@ -362,7 +370,7 @@
             "id": "for-my-friends",
             "type": "main",
             "name": "For My Friends",
-            "price": 900,
+            "price": 950,
             "currency": "₽",
             "ingredients": "Ром Diablo Negro Caribbean, ликер персиковый Niva Distillery, лимонный фреш, сироп",
             "volume": "160 мл"
@@ -396,7 +404,7 @@
             "id": "jawbox-tonic",
             "type": "main",
             "name": "Jawbox Tonic",
-            "price": 1000,
+            "price": 1200,
             "currency": "₽",
             "ingredients": "Джин JawBox, тоник, лайм",
             "volume": "300 мл"
@@ -405,7 +413,7 @@
             "id": "bombay-tonic",
             "type": "main",
             "name": "Bombay Tonic",
-            "price": 850,
+            "price": 900,
             "currency": "₽",
             "ingredients": "Джин Bombay Sapphire, тоник, лайм",
             "volume": "300 мл"
@@ -414,7 +422,7 @@
             "id": "oakheart-cola",
             "type": "main",
             "name": "Oakheart Cola",
-            "price": 600,
+            "price": 650,
             "currency": "₽",
             "ingredients": "Oakheart Original, кола, лайм",
             "volume": "300 мл"
@@ -423,7 +431,7 @@
             "id": "bosford-tonic",
             "type": "main",
             "name": "Bosford Tonic",
-            "price": 600,
+            "price": 650,
             "currency": "₽",
             "ingredients": "Bosford, тоник, лайм",
             "volume": "300 мл"
@@ -432,7 +440,7 @@
             "id": "martini-fiero-tonic",
             "type": "main",
             "name": "Martini Fiero Tonic",
-            "price": 600,
+            "price": 650,
             "currency": "₽",
             "ingredients": "Martini Fiero, тоник, апельсин",
             "volume": "300 мл"
@@ -441,7 +449,7 @@
             "id": "william-lawsons-cola",
             "type": "main",
             "name": "William Lawsons Cola",
-            "price": 600,
+            "price": 650,
             "currency": "₽",
             "ingredients": "William Lawsons, кола, лимон",
             "volume": "300 мл"
@@ -450,7 +458,7 @@
             "id": "cuba-libre",
             "type": "main",
             "name": "Cuba Libre",
-            "price": 500,
+            "price": 550,
             "currency": "₽",
             "ingredients": "Ром Diablo Negro Caribbean, кола, лайм",
             "volume": "300 мл"
@@ -459,7 +467,7 @@
             "id": "whiskey-cola",
             "type": "main",
             "name": "Whiskey Cola",
-            "price": 500,
+            "price": 550,
             "currency": "₽",
             "ingredients": "Виски Your Choice, кола, лимон",
             "volume": "300 мл"
@@ -468,10 +476,57 @@
             "id": "gin-tonic",
             "type": "main",
             "name": "Gin Tonic",
-            "price": 500,
+            "price": 550,
             "currency": "₽",
             "ingredients": "Джин Royal Raven Dry, тоник, лайм",
             "volume": "300 мл"
+          }
+        ]
+      },
+      {
+        "id": "red-bull-cocktails",
+        "type": "main",
+        "title": "RED BULL КОКТЕЙЛИ",
+        "items": [
+          {
+            "id": "tequila-bull",
+            "type": "main",
+            "name": "Tequila Bull",
+            "price": 1100,
+            "currency": "₽",
+            "description": "",
+            "ingredients": "Tequila EL Charro 0,04, Red Bull tropical 1б, Lemon 0,015",
+            "volume": "350 мл"
+          },
+          {
+            "id": "jager-bull",
+            "type": "main",
+            "name": "Jager Bull",
+            "price": 950,
+            "currency": "₽",
+            "description": "",
+            "ingredients": "Liquor Jagermeister 0,04, Red Bull sugar free 1б, Lemon 0,015",
+            "volume": "350 мл"
+          },
+          {
+            "id": "watermelon-gin",
+            "type": "main",
+            "name": "Watermelon Gin",
+            "price": 700,
+            "currency": "₽",
+            "description": "",
+            "ingredients": "Gin Royal Raven Dry 0,04, Red Bull watermelon 1б, Lemon 0,015",
+            "volume": "350 мл"
+          },
+          {
+            "id": "vodka-red-bull",
+            "type": "main",
+            "name": "Vodka Red Bull",
+            "price": 700,
+            "currency": "₽",
+            "description": "",
+            "ingredients": "Vodka Хаски 0,04, Red Bull 1б, Lemon 0,015",
+            "volume": "350 мл"
           }
         ]
       },
@@ -503,7 +558,7 @@
             "type": "spirits",
             "subtype": "vodka",
             "name": "Absolut",
-            "price": 450,
+            "price": 500,
             "currency": "₽",
             "ingredients": "Водка, 40 мл"
           },
@@ -512,7 +567,7 @@
             "type": "spirits",
             "subtype": "vodka",
             "name": "Koskenkorva",
-            "price": 450,
+            "price": 600,
             "currency": "₽",
             "ingredients": "Водка, 40 мл"
           },
@@ -521,7 +576,7 @@
             "type": "spirits",
             "subtype": "vodka",
             "name": "Grey Goose",
-            "price": 600,
+            "price": 700,
             "currency": "₽",
             "ingredients": "Водка, 40 мл"
           },
@@ -530,7 +585,7 @@
             "type": "spirits",
             "subtype": "vodka",
             "name": "Pyla",
-            "price": 700,
+            "price": 950,
             "currency": "₽",
             "ingredients": "Водка, 40 мл"
           },
@@ -557,7 +612,7 @@
             "type": "spirits",
             "subtype": "gin",
             "name": "Bombay Sapphire",
-            "price": 700,
+            "price": 800,
             "currency": "₽",
             "ingredients": "Джин, 40 мл"
           },
@@ -566,7 +621,7 @@
             "type": "spirits",
             "subtype": "gin",
             "name": "Jawbox Small Batch",
-            "price": 800,
+            "price": 1100,
             "currency": "₽",
             "ingredients": "Джин, 40 мл"
           },
@@ -593,7 +648,7 @@
             "type": "spirits",
             "subtype": "rum",
             "name": "Red Bonny",
-            "price": 750,
+            "price": 1000,
             "currency": "₽",
             "ingredients": "Ром, 40 мл"
           },
@@ -602,7 +657,7 @@
             "type": "spirits",
             "subtype": "tequila",
             "name": "El Charro",
-            "price": 500,
+            "price": 600,
             "currency": "₽",
             "ingredients": "Текила, 40 мл"
           },
@@ -611,7 +666,7 @@
             "type": "spirits",
             "subtype": "tequila",
             "name": "Pueblo Viejo Blanco",
-            "price": 700,
+            "price": 900,
             "currency": "₽",
             "ingredients": "Текила, 40 мл"
           },
@@ -620,7 +675,7 @@
             "type": "spirits",
             "subtype": "tequila",
             "name": "Pueblo Viejo Reposado",
-            "price": 850,
+            "price": 1100,
             "currency": "₽",
             "ingredients": "Текила, 40 мл"
           },
@@ -647,16 +702,7 @@
             "type": "spirits",
             "subtype": "whiskey",
             "name": "Dewar's White Label",
-            "price": 650,
-            "currency": "₽",
-            "ingredients": "Виски, 40 мл"
-          },
-          {
-            "id": "ballantines",
-            "type": "spirits",
-            "subtype": "whiskey",
-            "name": "Ballantine's",
-            "price": 650,
+            "price": 600,
             "currency": "₽",
             "ingredients": "Виски, 40 мл"
           },
@@ -665,7 +711,7 @@
             "type": "spirits",
             "subtype": "whiskey",
             "name": "Jameson",
-            "price": 650,
+            "price": 700,
             "currency": "₽",
             "ingredients": "Виски, 40 мл"
           },
@@ -674,7 +720,7 @@
             "type": "spirits",
             "subtype": "whiskey",
             "name": "Jack Daniel's",
-            "price": 650,
+            "price": 700,
             "currency": "₽",
             "ingredients": "Виски, 40 мл"
           },
@@ -683,7 +729,16 @@
             "type": "spirits",
             "subtype": "whiskey",
             "name": "Jim Beam",
-            "price": 650,
+            "price": 700,
+            "currency": "₽",
+            "ingredients": "Виски, 40 мл"
+          },
+          {
+            "id": "ballantines",
+            "type": "spirits",
+            "subtype": "whiskey",
+            "name": "Ballantine's",
+            "price": 750,
             "currency": "₽",
             "ingredients": "Виски, 40 мл"
           },
@@ -692,16 +747,7 @@
             "type": "spirits",
             "subtype": "whiskey",
             "name": "The Dubliner",
-            "price": 700,
-            "currency": "₽",
-            "ingredients": "Виски, 40 мл"
-          },
-          {
-            "id": "born-irish",
-            "type": "spirits",
-            "subtype": "whiskey",
-            "name": "Born Irish",
-            "price": 850,
+            "price": 950,
             "currency": "₽",
             "ingredients": "Виски, 40 мл"
           },
@@ -710,7 +756,16 @@
             "type": "spirits",
             "subtype": "whiskey",
             "name": "Chivas Regal 12 Years Old",
-            "price": 850,
+            "price": 950,
+            "currency": "₽",
+            "ingredients": "Виски, 40 мл"
+          },
+          {
+            "id": "born-irish",
+            "type": "spirits",
+            "subtype": "whiskey",
+            "name": "Born Irish",
+            "price": 1100,
             "currency": "₽",
             "ingredients": "Виски, 40 мл"
           },
@@ -719,7 +774,7 @@
             "type": "spirits",
             "subtype": "whiskey",
             "name": "Kirker Shamrock",
-            "price": 950,
+            "price": 1300,
             "currency": "₽",
             "ingredients": "Виски, 40 мл"
           },
@@ -728,7 +783,7 @@
             "type": "spirits",
             "subtype": "liquor",
             "name": "ХАСКИ Nordic Currant/Berry Mix/Cranberry/Citrus Mix",
-            "price": 400,
+            "price": 350,
             "currency": "₽",
             "ingredients": "Настойка, 40 мл"
           },
@@ -737,7 +792,7 @@
             "type": "spirits",
             "subtype": "liquor",
             "name": "SOJU Peach/Plum/Grapefruit/Strawberry",
-            "price": 400,
+            "price": 350,
             "currency": "₽",
             "ingredients": "Настойка, 40 мл"
           },
@@ -755,9 +810,124 @@
             "type": "spirits",
             "subtype": "liquor",
             "name": "KOSKENKORVA Ginger/Forest Berries/Oaky Cranberry",
-            "price": 600,
+            "price": 800,
             "currency": "₽",
             "ingredients": "Настойка, 40 мл"
+          },
+          {
+            "id": "tundra-bitter",
+            "type": "spirits",
+            "subtype": "liquor",
+            "name": "Tundra Bitter",
+            "price": 450,
+            "currency": "₽",
+            "ingredients": "40 мл"
+          },
+          {
+            "id": "sibbitter",
+            "type": "spirits",
+            "subtype": "liquor",
+            "name": "Sibbitter",
+            "price": 450,
+            "currency": "₽",
+            "ingredients": "40 мл"
+          },
+          {
+            "id": "absinthe",
+            "type": "spirits",
+            "subtype": "liquor",
+            "name": "Absinthe",
+            "price": 450,
+            "currency": "₽",
+            "ingredients": "40 мл"
+          },
+          {
+            "id": "niva-distillery",
+            "type": "spirits",
+            "subtype": "liquor",
+            "name": "Niva Distillery",
+            "price": 450,
+            "currency": "₽",
+            "ingredients": "40 мл"
+          },
+          {
+            "id": "sambuca",
+            "type": "spirits",
+            "subtype": "liquor",
+            "name": "Sambuca",
+            "price": 450,
+            "currency": "₽",
+            "ingredients": "40 мл"
+          },
+          {
+            "id": "jagermeister",
+            "type": "spirits",
+            "subtype": "liquor",
+            "name": "Jagermeister",
+            "price": 650,
+            "currency": "₽",
+            "ingredients": "40 мл"
+          }
+        ]
+      },
+      {
+        "id": "wine",
+        "type": "main",
+        "title": "ВИНО",
+        "items": [
+          {
+            "id": "senorio-de-segorbe-tempranillo",
+            "type": "wine",
+            "name": "Senorio De Segorbe SG Tempranillo",
+            "price": 600,
+            "currency": "₽",
+            "ingredients": "",
+            "volume": "125 мл"
+          },
+          {
+            "id": "senorio-de-segorbe-macabeo",
+            "type": "wine",
+            "name": "Senorio De Segorbe SG Macabeo",
+            "price": 600,
+            "currency": "₽",
+            "ingredients": "",
+            "volume": "125 мл"
+          },
+          {
+            "id": "martini-prosecco-187",
+            "type": "wine",
+            "name": "Martini Prosecco D.O.C.",
+            "price": 2000,
+            "currency": "₽",
+            "ingredients": "",
+            "volume": "187 мл"
+          },
+          {
+            "id": "martini-asti-187",
+            "type": "wine",
+            "name": "Martini Asti D.O.C.G.",
+            "price": 2000,
+            "currency": "₽",
+            "ingredients": "",
+            "volume": "187 мл"
+          },
+          {
+            "id": "martini-prosecco-750",
+            "type": "wine",
+            "name": "Martini Prosecco D.O.C.",
+            "price": 7000,
+            "currency": "₽",
+            "ingredients": "",
+            "volume": "0.75 L"
+          },
+          {
+            "id": "martini-asti-750",
+            "type": "wine",
+            "name": "Martini Asti D.O.C.G.",
+            "price": 7000,
+            "currency": "₽",
+            "ingredients": "",
+            "volume": "0.75 L"
           }
         ]
       },
@@ -770,7 +940,7 @@
             "id": "martini-bianco",
             "type": "vermouth",
             "name": "Martini Bianco",
-            "price": 550,
+            "price": 600,
             "currency": "₽",
             "ingredients": "80 мл"
           },
@@ -778,7 +948,7 @@
             "id": "martini-extra-dry",
             "type": "vermouth",
             "name": "Martini Extra Dry",
-            "price": 550,
+            "price": 600,
             "currency": "₽",
             "ingredients": "80 мл"
           },
@@ -786,7 +956,7 @@
             "id": "martini-rosso",
             "type": "vermouth",
             "name": "Martini Rosso",
-            "price": 550,
+            "price": 600,
             "currency": "₽",
             "ingredients": "80 мл"
           },
@@ -794,7 +964,7 @@
             "id": "martini-fiero",
             "type": "vermouth",
             "name": "Martini Fiero",
-            "price": 550,
+            "price": 600,
             "currency": "₽",
             "ingredients": "80 мл"
           }
@@ -811,7 +981,8 @@
             "name": "Corona Extra",
             "price": 600,
             "currency": "₽",
-            "ingredients": "330 мл"
+            "ingredients": "",
+            "volume": "330 мл"
           },
           {
             "id": "hoegaarden",
@@ -819,7 +990,8 @@
             "name": "Hoegaarden",
             "price": 550,
             "currency": "₽",
-            "ingredients": "450 мл"
+            "ingredients": "",
+            "volume": "450 мл"
           },
           {
             "id": "lowenbrau-dunkel",
@@ -827,7 +999,8 @@
             "name": "Löwenbräu Dunkel",
             "price": 500,
             "currency": "₽",
-            "ingredients": "450 мл"
+            "ingredients": "",
+            "volume": "450 мл"
           },
           {
             "id": "cider",
@@ -835,7 +1008,8 @@
             "name": "Сидр",
             "price": 450,
             "currency": "₽",
-            "ingredients": "330 мл"
+            "ingredients": "",
+            "volume": "330 мл"
           },
           {
             "id": "bud",
@@ -843,15 +1017,17 @@
             "name": "Bud",
             "price": 450,
             "currency": "₽",
-            "ingredients": "330 мл"
+            "ingredients": "",
+            "volume": "330 мл"
           },
           {
             "id": "bud-na",
             "type": "beer",
             "name": "Bud б/а",
-            "price": 400,
+            "price": 450,
             "currency": "₽",
-            "ingredients": "330 мл"
+            "ingredients": "",
+            "volume": "330 мл"
           }
         ]
       },
@@ -919,7 +1095,7 @@
             "price": 250,
             "currency": "₽",
             "ingredients": "",
-            "volume": "200 мл"
+            "volume": "250 мл"
           },
           {
             "id": "soft-drinks",
@@ -934,7 +1110,7 @@
             "id": "lemonade",
             "type": "soft-drinks",
             "name": "Лимонад (экзотик, пина колада)",
-            "price": 300,
+            "price": 350,
             "currency": "₽",
             "ingredients": "",
             "volume": "350 мл"
@@ -944,13 +1120,13 @@
       {
         "id": "party-sets-bottles",
         "type": "main",
-        "title": "ПАТИ СЕТЫ БУТЫЛКИ",
+        "title": "ПАТИ СЕТЫ",
         "items": [
           {
             "id": "bombay-sapphire-set",
             "type": "party-sets",
             "name": "Bombay Sapphire + Tonic",
-            "price": 10000,
+            "price": 12000,
             "currency": "₽",
             "ingredients": "Bombay Sapphire 0.5 л, тоник 6 бутылок",
             "volume": ""
@@ -959,7 +1135,7 @@
             "id": "koskenkorva-set",
             "type": "party-sets",
             "name": "Koskenkorva + Red Bull",
-            "price": 8000,
+            "price": 10000,
             "currency": "₽",
             "ingredients": "Koskenkorva 0.5 л, Red Bull 6 банок",
             "volume": ""
@@ -977,7 +1153,7 @@
             "id": "william-lawsons-set",
             "type": "party-sets",
             "name": "William Lawson's + Cola",
-            "price": 6500,
+            "price": 7000,
             "currency": "₽",
             "ingredients": "William Lawson's 0.5 л, кола 6 бутылок",
             "volume": ""
@@ -986,7 +1162,7 @@
             "id": "oakheart-set",
             "type": "party-sets",
             "name": "Oakheart + Cola",
-            "price": 6500,
+            "price": 7000,
             "currency": "₽",
             "ingredients": "Oakheart 0.5 л, кола 6 бутылок",
             "volume": ""
@@ -995,7 +1171,7 @@
             "id": "tundra-set",
             "type": "party-sets",
             "name": "Tundra Bitter + Red Bull",
-            "price": 5000,
+            "price": 5500,
             "currency": "₽",
             "ingredients": "Tundra Bitter 0.5 л, Red Bull 6 банок",
             "volume": ""
@@ -1004,7 +1180,7 @@
             "id": "martini-fiero-set",
             "type": "party-sets",
             "name": "Martini Fiero + Tonic",
-            "price": 5500,
+            "price": 5000,
             "currency": "₽",
             "ingredients": "Martini Fiero 0.5 л, тоник 6 бутылок",
             "volume": ""
